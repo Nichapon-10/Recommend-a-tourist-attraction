@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "ดอยอินทนนท์",
+    "province": "เชียงใหม่",
+    "region": "เหนือ",
+    "category": "ภูเขา",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=70",
+    "description": "ยอดเขาสูงที่สุดในไทย อากาศเย็นตลอดปี",
+    "best_time": "พ.ย.-ก.พ.",
+    "rating": 4.8,
+    "user_id": 1
+  },
+  {
+    "id": 2,
+    "name": "หาดไร่เลย์",
+    "province": "กระบี่",
+    "region": "ใต้",
+    "category": "ทะเล",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=70",
+    "description": "หาดสวยล้อมด้วยหน้าผาหินปูน",
+    "best_time": "พ.ย.-เม.ย.",
+    "rating": 4.7,
+    "user_id": 2
+  },
+  {
+    "id": 3,
+    "name": "วัดร่องขุ่น",
+    "province": "เชียงราย",
+    "region": "เหนือ",
+    "category": "วัด",
+    "image": "https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&q=70",
+    "description": "วัดสีขาวงดงามสไตล์ร่วมสมัย",
+    "best_time": "ตลอดปี",
+    "rating": 4.6,
+    "user_id": 3
+  },
+  {
+    "id": 4,
+    "name": "น้ำตกเอราวัณ",
+    "province": "กาญจนบุรี",
+    "region": "กลาง",
+    "category": "น้ำตก",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600&q=70",
+    "description": "น้ำตกเจ็ดชั้นสีเขียวมรกต",
+    "best_time": "มิ.ย.-ต.ค.",
+    "rating": 4.5,
+    "user_id": 5
+  },
+  {
+    "id": 5,
+    "name": "ย่านเมืองเก่าภูเก็ต",
+    "province": "ภูเก็ต",
+    "region": "ใต้",
+    "category": "เมือง",
+    "image": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=600&q=70",
+    "description": "ตึกชิโน-โปรตุกีสสีสันสดใส",
+    "best_time": "พ.ย.-มี.ค.",
+    "rating": 4.4,
+    "user_id": 6
+  },
+  {
+    "id": 6,
+    "name": "คาเฟ่ริมน้ำเมืองน่าน",
+    "province": "น่าน",
+    "region": "เหนือ",
+    "category": "คาเฟ่",
+    "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=70",
+    "description": "คาเฟ่วิวทุ่งนาและภูเขา",
+    "best_time": "ตลอดปี",
+    "rating": 4.3,
+    "user_id": 4
+  },
+  {
+    "id": 7,
+    "name": "อยุธยาเมืองมรดกโลก",
+    "province": "พระนครศรีอยุธยา",
+    "region": "กลาง",
+    "category": "วัด",
+    "image": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=600&q=70",
+    "description": "โบราณสถานอายุหลายร้อยปี",
+    "best_time": "พ.ย.-ก.พ.",
+    "rating": 4.6,
+    "user_id": 7
+  },
+  {
+    "id": 8,
+    "name": "เกาะเต่า",
+    "province": "สุราษฎร์ธานี",
+    "region": "ใต้",
+    "category": "ทะเล",
+    "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=70",
+    "description": "สวรรค์นักดำน้ำ น้ำใสมาก",
+    "best_time": "มี.ค.-ก.ย.",
+    "rating": 4.7,
+    "user_id": 8
+  },
+  {
+    "id": 9,
+    "name": "ภูชี้ฟ้า",
+    "province": "เชียงราย",
+    "region": "เหนือ",
+    "category": "ภูเขา",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=70",
+    "description": "ทะเลหมอกยามเช้า",
+    "best_time": "พ.ย.-ก.พ.",
+    "rating": 4.5,
+    "user_id": 9
+  },
+  {
+    "id": 10,
+    "name": "อุทยานแห่งชาติเขาใหญ่",
+    "province": "นครราชสีมา",
+    "region": "อีสาน",
+    "category": "น้ำตก",
+    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=70",
+    "description": "ป่าดิบชื้นและน้ำตกเหวนรก",
+    "best_time": "มิ.ย.-ต.ค.",
+    "rating": 4.4,
+    "user_id": 10
+  }
+]
