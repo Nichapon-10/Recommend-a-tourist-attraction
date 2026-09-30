@@ -584,6 +584,7 @@ def recommend_places(user_id: str, limit: int = 6) -> list[dict[str, Any]]:
         OPTIONAL MATCH (r:User)-[:RECOMMENDED]->(p)
         OPTIONAL MATCH (p)-[:IN_CATEGORY]->(allc:Category)
         RETURN p.place_id AS place_id, p.name AS name, p.province AS province, p.region AS region,
+               p.image AS image, p.description AS description, p.best_time AS best_time,
                collect(DISTINCT r.name) AS recommenders,
                collect(DISTINCT allc.name) AS categories,
                friend_count, friend_names, interest_matches, matched_categories,
