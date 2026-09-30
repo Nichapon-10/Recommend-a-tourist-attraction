@@ -63,6 +63,12 @@ st.markdown(
                   border-radius:16px; margin-bottom:.75rem; background:#fff;}
       .score-pill, .badge {display:inline-block; padding:.2rem .6rem; border-radius:999px;
                   background:#F97316; color:white; font-size:.8rem; font-weight:700;}
+      .rec-card {display:flex; gap:1rem; align-items:stretch; background:#fff; border-radius:16px;
+                 box-shadow:0 4px 14px rgba(0,0,0,.12); overflow:hidden; margin-bottom:1rem;
+                 transition:transform .2s;}
+      .rec-card:hover {transform:scale(1.01);}
+      .rec-card img {width:260px; min-height:170px; object-fit:cover; flex-shrink:0;}
+      .rec-card .rec-body {padding:.9rem 1.1rem .4rem 0;}
       .stars {color:#F59E0B;}
       .muted {opacity:.72; font-size:.9rem;}
       .avatar {width:64px; height:64px; border-radius:50%; object-fit:cover;}
@@ -245,11 +251,16 @@ elif page == "Recommendations":
         categories = ", ".join(row.get("categories") or []) or "ไม่ระบุหมวด"
         st.markdown(
             f"""
-            <div class="book-card">
-              <span class="score-pill">#{i} · score {row['score']:.2f}</span>
-              <h3 style="margin:.55rem 0 .2rem 0">{html.escape(row['name'])}</h3>
-              <div class="muted">{row['place_id']} · {html.escape(row['province'])} ({row['region']}) · {categories} · แนะนำโดย {html.escape(recs)}</div>
-              <p><b>เหตุผล:</b> {explain_reason(row)}</p>
+            <div class="rec-card">
+              {img_tag(row.get('image'))}
+              <div class="rec-body">
+                <span class="score-pill">#{i} · score {row['score']:.2f}</span>
+                <h3 style="margin:.55rem 0 .2rem 0">{html.escape(row['name'])}</h3>
+                <div class="muted">{row['place_id']} · {html.escape(row['province'])} ({row['region']}) · {categories} · แนะนำโดย {html.escape(recs)}</div>
+                <div><span class="stars">{stars(row['rating'])}</span> {row['rating']:.1f} · 🗓 {html.escape(row.get('best_time') or '-')}</div>
+                <small>{html.escape(row.get('description') or '')}</small>
+                <p><b>เหตุผล:</b> {explain_reason(row)}</p>
+              </div>
             </div>
             """,
             unsafe_allow_html=True,
