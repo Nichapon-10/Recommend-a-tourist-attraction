@@ -34,6 +34,9 @@ OPTIONAL MATCH (r:User)-[:RECOMMENDED]->(p)
 OPTIONAL MATCH (p)-[:IN_CATEGORY]->(allc:Category)
 RETURN p.place_id AS place_id,
        p.name AS name,
+       p.image AS image,
+       p.description AS description,
+       p.best_time AS best_time,
        collect(DISTINCT r.name) AS recommenders,
        collect(DISTINCT allc.name) AS categories,
        friend_count,
